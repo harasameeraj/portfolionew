@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hara-sameeraj.vercel.app/sitemap.xml

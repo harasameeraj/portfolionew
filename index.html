@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <script src="/theme-init.js"></script>
+  <title>Hara Sameeraj Kuppili · Full-stack AI engineer</title>
+  <meta name="description" content="Hara Sameeraj Kuppili, full-stack AI engineer at VIT Chennai. 5× hackathon winner, two internships, AI products with LLM agents, RAG and PII redaction, built with React, FastAPI and Node.js." />
+  <meta name="author" content="Hara Sameeraj Kuppili" />
+  <meta name="theme-color" content="#0b0a0c" />
+  <link rel="canonical" href="https://hara-sameeraj.vercel.app/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Hara Sameeraj Kuppili · Full-stack AI engineer" />
+  <meta property="og:description" content="I build AI products end to end and make them secure by default. 5× hackathon winner · 2 internships · VIT Chennai." />
+  <meta property="og:image" content="https://hara-sameeraj.vercel.app/og.png" />
+  <meta property="og:url" content="https://hara-sameeraj.vercel.app/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Hara Sameeraj Kuppili · Full-stack AI engineer" />
+  <meta name="twitter:description" content="I build AI products end to end and make them secure by default." />
+  <meta name="twitter:image" content="https://hara-sameeraj.vercel.app/og.png" />
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="preload" as="image" href="/hara-cut.webp" type="image/webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Hara Sameeraj Kuppili",
+    "jobTitle": "Full-stack AI engineer",
+    "email": "mailto:harasameeraj.7@gmail.com",
+    "telephone": "+91-90631-27578",
+    "image": "https://hara-sameeraj.vercel.app/hara.jpg",
+    "address": { "@type": "PostalAddress", "addressLocality": "Chennai", "addressCountry": "IN" },
+    "alumniOf": "VIT Chennai",
+    "url": "https://hara-sameeraj.vercel.app/",
+    "sameAs": [
+      "https://www.linkedin.com/in/hara-sameeraj-8b63072b7/",
+      "https://github.com/harasameeraj",
+      "https://www.credly.com/users/hara-sameeraj-kuppili"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <p class="loader__line mono" id="loaderLine">establishing secure session</p>
+      <div class="loader__row">
+        <span class="loader__name">Hara <i>Sameeraj</i></span>
+        <span class="loader__count mono"><span id="loaderCount">000</span></span>
+      </div>
+      <div class="loader__bar"><span id="loaderBar"></span></div>
+    </div>
+  </div>
+
+  <div class="grain" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+  <div class="cursor is-hidden" aria-hidden="true"><div class="cursor__dot"></div><div class="cursor__ring"><span class="cursor__label"></span></div></div>
+  <div class="peek" id="peek" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__mark" aria-label="Hara Sameeraj, back to top"><span class="nav__mono">hs</span><span class="nav__name">Hara Sameeraj</span></a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#terminal">Terminal</a>
+      <a href="#awards">Recognition</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav__right">
+      <button class="theme-btn" id="themeBtn" aria-label="Switch to light mode" data-magnetic>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <mask id="moonMask"><rect width="24" height="24" fill="#fff"/><circle class="moon-cut" cx="24" cy="4" r="7" fill="#000"/></mask>
+          <circle class="sun-core" cx="12" cy="12" r="5" mask="url(#moonMask)"/>
+          <g class="sun-rays"><path d="M12 1.5v2.5M12 20v2.5M1.5 12H4M20 12h2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/></g>
+        </svg>
+      </button>
+      <button class="kbd-btn" id="openPalette" aria-label="Open command menu"><kbd>⌘</kbd><kbd>K</kbd></button>
+      <a class="btn btn--solid btn--sm nav__cv" href="/Hara_Sameeraj_Kuppili_Resume.pdf" download data-magnetic><span>Résumé</span></a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="menu" id="menu" aria-hidden="true">
+    <nav class="menu__links">
+      <a href="#about"><span>01</span>About</a>
+      <a href="#experience"><span>02</span>Experience</a>
+      <a href="#work"><span>03</span>Work</a>
+      <a href="#skills"><span>04</span>Skills</a>
+      <a href="#terminal"><span>05</span>Terminal</a>
+      <a href="#awards"><span>06</span>Recognition</a>
+      <a href="#contact"><span>07</span>Contact</a>
+    </nav>
+    <div class="menu__foot mono">
+      <a href="mailto:harasameeraj.7@gmail.com">harasameeraj.7@gmail.com</a>
+      <a href="tel:+919063127578">+91 90631 27578</a>
+    </div>
+  </div>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <canvas class="hero__canvas" id="heroCanvas" aria-hidden="true"></canvas>
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <p class="hero__kicker mono" data-intro><span class="live"></span>Open to internships in software, AI &amp; security</p>
+          <h1 class="hero__name" aria-label="Hara Sameeraj Kuppili">
+            <span class="ln"><span>Hara</span></span>
+            <span class="ln"><span>Sameeraj</span></span>
+            <span class="ln ln--serif"><span>Kuppili</span></span>
+          </h1>
+          <p class="hero__lede" data-intro>
+            Full-stack AI engineer. I take products from <em>idea to production</em>, and I make them secure by default.
+          </p>
+          <div class="hero__cta" data-intro>
+            <a href="#work" class="btn btn--solid" data-magnetic><span>See the work</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a href="#contact" class="btn btn--line" data-magnetic><span>Get in touch</span></a>
+          </div>
+        </div>
+
+        <figure class="portrait" id="portrait" data-cursor="hello">
+          <div class="portrait__aura" aria-hidden="true"></div>
+          <img class="portrait__img" src="/hara-cut.webp" alt="Portrait of Hara Sameeraj Kuppili" width="703" height="983" fetchpriority="high" />
+          <span class="portrait__scan" aria-hidden="true"></span>
+          <figcaption class="portrait__tag mono"><span class="live"></span>identity verified <span>· HSK-2028</span></figcaption>
+        </figure>
+      </div>
+
+      <div class="container">
+        <dl class="stats" data-intro>
+          <div><dt><span data-count="5">5</span>×</dt><dd>hackathon wins</dd></div>
+          <div><dt><span data-count="2">2</span></dt><dd>full-stack internships</dd></div>
+          <div><dt><span data-count="99.9" data-decimals="1">99.9</span>%</dt><dd>PII recall on scanned docs</dd></div>
+          <div><dt><span data-count="75">75</span>%</dt><dd>less resume-screening time</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container split">
+        <div class="split__aside"><span class="label">About</span></div>
+        <div class="split__main">
+          <p class="about__lede" data-words>
+            I'm a third-year computer science student at VIT Chennai, and I'd rather ship than talk about shipping. I built an <mark>AI hiring system that won the AWS VIT Chennai hackathon</mark>, a gateway that strips <mark>99.9% of personal data</mark> out of documents before any model reads them, and production apps for two companies.
+          </p>
+          <dl class="facts">
+            <div data-reveal><dt class="mono">Now</dt><dd>Building with LLM agents, retrieval and privacy-first AI pipelines.</dd></div>
+            <div data-reveal><dt class="mono">Studying</dt><dd>B.Tech in Computer Science &amp; Engineering, VIT Chennai, 2024 to 2028.</dd></div>
+            <div data-reveal><dt class="mono">Coursework</dt><dd>Data structures &amp; algorithms, OOP, DBMS, operating systems, computer networks.</dd></div>
+            <div data-reveal><dt class="mono">How I build</dt><dd>Security from day one: role-based access, Row-Level Security, validated inputs, parameterised queries, OWASP Top 10.</dd></div>
+            <div data-reveal><dt class="mono">Based in</dt><dd>Chennai, India. It's <span id="clock">--:--</span> here right now.</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="container">
+        <header class="sec-head">
+          <span class="label">Experience</span>
+          <h2 class="h2" data-title>Two internships, <em>both shipped.</em></h2>
+        </header>
+        <ol class="jobs">
+          <li class="job" data-reveal>
+            <p class="job__when mono">May – Jul 2026<br /><span>Chennai</span></p>
+            <div class="job__main">
+              <h3><span class="job__co">Qcerebrum</span> <span class="job__role">Full Stack Developer Intern</span></h3>
+              <p class="job__what">Orbit SchoolConnect, a parent–teacher app for schools.</p>
+              <ul class="job__list">
+                <li>Built a two-portal mobile app from scratch that puts attendance, grades, homework and fees in one place.</li>
+                <li>Designed the PostgreSQL schema and REST APIs with Row-Level Security, so a parent can only ever see their own child's records.</li>
+                <li>Shipped real-time chat and push notifications over Supabase Realtime, synced across devices.</li>
+              </ul>
+            </div>
+            <div class="job__side">
+              <p class="mono job__stack">React Native · Expo · Supabase · PostgreSQL · RLS</p>
+              <a class="ulink" href="https://github.com/harasameeraj/orbit" target="_blank" rel="noopener">View repo ↗</a>
+            </div>
+          </li>
+          <li class="job" data-reveal>
+            <p class="job__when mono">Dec 2025 – Apr 2026<br /><span>Chennai</span></p>
+            <div class="job__main">
+              <h3><span class="job__co">Apex Techno Soft</span> <span class="job__role">Full Stack Developer Intern, AI &amp; Web</span></h3>
+              <p class="job__what">VendorScan, an AI platform for vendor-risk intelligence.</p>
+              <ul class="job__list">
+                <li>Turned vendor due diligence from hours into minutes: enter a supplier, get a structured risk report.</li>
+                <li>Designed GPT-4o agents with web search that turn adverse news, registries and reputation signals into findings.</li>
+                <li>Hardened the FastAPI backend with validated inputs and isolated secrets, and cut fetch-and-parse latency by 40%.</li>
+              </ul>
+            </div>
+            <div class="job__side">
+              <p class="mono job__stack">React · FastAPI · GPT-4o · AI agents</p>
+              <a class="ulink" href="https://github.com/harasameeraj/vendor-scan" target="_blank" rel="noopener">View repo ↗</a>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="section work" id="work">
+      <div class="container">
+        <header class="sec-head">
+          <span class="label">Selected work</span>
+          <h2 class="h2" data-title>Five products. <em>Try them</em> right here.</h2>
+          <p class="sec-head__sub">Every project below comes with a small working demo. Click around, type, drag the sliders.</p>
+        </header>
+
+        <!-- 01 Stitch -->
+        <article class="project">
+          <div class="project__info">
+            <p class="project__num mono">01 / 05</p>
+            <h3 class="project__title">Stitch ATS</h3>
+            <p class="project__award"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 01-10 0V4zM7 6H4a3 3 0 003 4M17 6h3a3 3 0 01-3 4"/></svg>Winner, AWS VIT Chennai Hackathon 2026</p>
+            <p class="project__desc">An AI applicant tracking system I took from idea to live deployment in one hackathon sprint. Language models score every CV against the job description, the candidate's GitHub and LinkedIn. A sourcing engine searches GitHub for developers by skill and location, then ranks and imports them.</p>
+            <dl class="metrics">
+              <div><dt>75%</dt><dd>less screening time</dd></div>
+              <div><dt>&lt;1s</dt><dd>to score a CV</dd></div>
+              <div><dt>1</dt><dd>sprint, idea to live</dd></div>
+            </dl>
+            <p class="project__stack mono">Python · FastAPI · React · SQLAlchemy · Gemini · OpenAI · GitHub API</p>
+            <div class="project__links">
+              <a class="btn btn--solid btn--sm" href="https://stitch-ats-frontend.onrender.com" target="_blank" rel="noopener" data-magnetic><span>Open live app</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+              <a class="ulink" href="https://github.com/harasameeraj/ats" target="_blank" rel="noopener">Source ↗</a>
+            </div>
+          </div>
+          <div class="project__demo" data-cursor="try it">
+            <div class="win">
+              <div class="win__bar"><span class="win__dots"><i></i><i></i><i></i></span><span class="mono">stitch · rank candidates</span><span class="win__tag mono">demo data</span></div>
+              <div class="win__body stitch">
+                <p class="demo__label mono">The role needs</p>
+                <div class="stitch__skills" id="stitchSkills"></div>
+                <ol class="stitch__list" id="stitchList"></ol>
+                <p class="demo__foot mono"><span id="stitchMeta">6 candidates ranked</span><span>JD · GitHub · LinkedIn</span></p>
+              </div>
+            </div>
+            <p class="demo__hint mono">Toggle the skills. The ranking re-sorts live.</p>
+          </div>
+        </article>
+
+        <!-- 02 Kavach -->
+        <article class="project project--flip">
+          <div class="project__info">
+            <p class="project__num mono">02 / 05</p>
+            <h3 class="project__title">Kavach &amp; Nirva</h3>
+            <p class="project__award project__award--plain">Optiv × VIT case studies, 2026</p>
+            <p class="project__desc">Two AI products on one FastAPI backend, shipped as a single Docker image. Kavach pulls text out of scanned PDFs, slides and Word files, finds personal data with five independent detection passes, and replaces it with stable pseudonyms before an LLM sees anything. A retrieval chat runs on a local model behind a leak guard that fails closed. Nirva classifies whether vendors really use AI or only market it.</p>
+            <dl class="metrics">
+              <div><dt>99.9%</dt><dd>recall · 99.8% precision</dd></div>
+              <div><dt>89%</dt><dd>AI-claim accuracy</dd></div>
+              <div><dt>236</dt><dd>docs a minute · 119 tests</dd></div>
+            </dl>
+            <p class="project__stack mono">TypeScript · React · FastAPI · spaCy · Presidio · Tesseract · Ollama (Qwen 2.5) · Docker</p>
+            <div class="project__links">
+              <a class="btn btn--solid btn--sm" href="https://github.com/harasameeraj/optiv/tree/full-project" target="_blank" rel="noopener" data-magnetic><span>View source</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+            </div>
+          </div>
+          <div class="project__demo" data-cursor="type">
+            <div class="win">
+              <div class="win__bar"><span class="win__dots"><i></i><i></i><i></i></span><span class="mono">kavach · redact</span><span class="win__tag mono">runs in your browser</span></div>
+              <div class="win__body kavach">
+                <label class="demo__label mono" for="piiIn">Input · edit me</label>
+                <textarea id="piiIn" rows="4" spellcheck="false">Hi, I'm Priya Raman. Mail me at priya.raman@acme.in or call +91 98401 22345. PAN ABCDE1234F, card 4111 1111 1111 1111, server 10.24.8.15.</textarea>
+                <p class="demo__label mono">What the model sees</p>
+                <div class="kavach__out" id="piiOut" aria-live="polite"></div>
+                <p class="demo__foot mono"><span id="piiCount">0 entities redacted</span><span class="ok" id="piiGuard">● leak guard: pass</span></p>
+              </div>
+            </div>
+            <p class="demo__hint mono">Add your own email or phone number. Nothing leaves this page.</p>
+          </div>
+        </article>
+
+        <!-- 03 Orbit -->
+        <article class="project">
+          <div class="project__info">
+            <p class="project__num mono">03 / 05</p>
+            <h3 class="project__title">Orbit SchoolConnect</h3>
+            <p class="project__award project__award--plain">Internship · Qcerebrum</p>
+            <p class="project__desc">A React Native app with two portals, one for parents and one for teachers. Attendance, grades, homework and fees live in one place, with real-time chat and push notifications. Row-Level Security in PostgreSQL means every parent only ever sees their own child.</p>
+            <dl class="metrics">
+              <div><dt>2</dt><dd>portals, one codebase</dd></div>
+              <div><dt>RLS</dt><dd>per-child data isolation</dd></div>
+              <div><dt>Live</dt><dd>chat &amp; push</dd></div>
+            </dl>
+            <p class="project__stack mono">React Native · Expo · Supabase · PostgreSQL · Realtime</p>
+            <div class="project__links">
+              <a class="btn btn--solid btn--sm" href="https://github.com/harasameeraj/orbit" target="_blank" rel="noopener" data-magnetic><span>View source</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+            </div>
+          </div>
+          <div class="project__demo project__demo--phone" data-cursor="tap">
+            <div class="phone" id="orbit">
+              <div class="phone__notch"></div>
+              <div class="phone__seg" role="tablist" aria-label="Portal">
+                <button class="is-on" data-view="parent" role="tab" aria-selected="true">Parent</button>
+                <button data-view="teacher" role="tab" aria-selected="false">Teacher</button>
+              </div>
+              <div class="phone__view is-on" data-panel="parent">
+                <p class="phone__hd">Aarav · Grade 8-B</p>
+                <div class="phone__cards"><span>Attendance<b>96%</b></span><span>Grades<b>A</b></span><span>Fees<b>Fri</b></span></div>
+                <div class="chat" id="orbitChat">
+                  <p class="bub">Maths homework is up. Due tomorrow.</p>
+                </div>
+                <div class="chat__quick" id="orbitQuick">
+                  <button>Thanks, got it!</button>
+                  <button>Is the fee due Friday?</button>
+                </div>
+              </div>
+              <div class="phone__view" data-panel="teacher">
+                <p class="phone__hd">Class 8-B · tap to mark</p>
+                <div class="roll" id="orbitRoll"></div>
+                <p class="roll__count mono" id="orbitCount"></p>
+                <p class="phone__note mono">Parents are notified instantly.</p>
+              </div>
+            </div>
+            <p class="demo__hint mono">Switch portals. Mark attendance or reply to the teacher.</p>
+          </div>
+        </article>
+
+        <!-- 04 VendorScan -->
+        <article class="project project--flip">
+          <div class="project__info">
+            <p class="project__num mono">04 / 05</p>
+            <h3 class="project__title">VendorScan</h3>
+            <p class="project__award project__award--plain">Internship · Apex Techno Soft</p>
+            <p class="project__desc">Type a supplier's name and get a structured risk report in minutes instead of hours. GPT-4o agents with web search read adverse news, company registries and reputation signals, then turn them into scored findings you can export.</p>
+            <dl class="metrics">
+              <div><dt>40%</dt><dd>lower fetch &amp; parse latency</dd></div>
+              <div><dt>hrs → min</dt><dd>per due-diligence check</dd></div>
+            </dl>
+            <p class="project__stack mono">React · FastAPI · GPT-4o · agents · web search</p>
+            <div class="project__links">
+              <a class="btn btn--solid btn--sm" href="https://github.com/harasameeraj/vendor-scan" target="_blank" rel="noopener" data-magnetic><span>View source</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+            </div>
+          </div>
+          <div class="project__demo" data-cursor="scan">
+            <div class="win">
+              <div class="win__bar"><span class="win__dots"><i></i><i></i><i></i></span><span class="mono">vendorscan · report</span><span class="win__tag mono">fictional vendors</span></div>
+              <div class="win__body vendor">
+                <p class="demo__label mono">Pick a supplier to scan</p>
+                <div class="vendor__pick" id="vendorPick"></div>
+                <div class="vendor__grid">
+                  <div class="gauge">
+                    <svg viewBox="0 0 200 116" aria-hidden="true"><path class="gauge__bg" d="M16 108 A84 84 0 0 1 184 108"/><path class="gauge__fg" id="gaugeFg" d="M16 108 A84 84 0 0 1 184 108"/></svg>
+                    <p class="gauge__val"><b id="gaugeNum">--</b><span class="mono" id="gaugeLbl">waiting</span></p>
+                  </div>
+                  <ul class="vendor__steps mono" id="vendorSteps"></ul>
+                </div>
+              </div>
+            </div>
+            <p class="demo__hint mono">Each scan runs the same pipeline: news, registries, reputation, score.</p>
+          </div>
+        </article>
+
+        <!-- 05 Triage -->
+        <article class="project">
+          <div class="project__info">
+            <p class="project__num mono">05 / 05</p>
+            <h3 class="project__title">AI Patient Triage</h3>
+            <p class="project__award"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 01-10 0V4zM7 6H4a3 3 0 003 4M17 6h3a3 3 0 01-3 4"/></svg>Winner, NIT Trichy Vortex'26</p>
+            <p class="project__desc">Flags high-risk patients the moment they arrive. A Random Forest model sorts patients into low, medium or high risk from vitals and symptoms, and feeds a live dashboard for doctors with JWT-secured logins and session-scoped routes.</p>
+            <dl class="metrics">
+              <div><dt>92%</dt><dd>model accuracy</dd></div>
+              <div><dt>3</dt><dd>risk tiers, live dashboard</dd></div>
+            </dl>
+            <p class="project__stack mono">Python · scikit-learn · Node.js · Express · React · Recharts · JWT</p>
+            <div class="project__links">
+              <a class="btn btn--solid btn--sm" href="https://github.com/harasameeraj/CODE-RED" target="_blank" rel="noopener" data-magnetic><span>View source</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+            </div>
+          </div>
+          <div class="project__demo" data-cursor="drag">
+            <div class="win">
+              <div class="win__bar"><span class="win__dots"><i></i><i></i><i></i></span><span class="mono">triage · intake</span><span class="win__tag mono">illustrative rules</span></div>
+              <div class="win__body triage">
+                <svg class="ecg" viewBox="0 0 320 70" preserveAspectRatio="none" aria-hidden="true"><path id="ecgPath" d="M0 35 H70 L78 35 L86 14 L96 58 L104 26 L112 35 H230 L238 35 L246 8 L256 62 L264 24 L272 35 H320"/></svg>
+                <div class="triage__row">
+                  <label class="mono" for="tHr">Heart rate <b id="tHrV">88</b> bpm</label>
+                  <input type="range" id="tHr" min="40" max="180" value="88" />
+                </div>
+                <div class="triage__row">
+                  <label class="mono" for="tO2">SpO₂ <b id="tO2V">97</b>%</label>
+                  <input type="range" id="tO2" min="80" max="100" value="97" />
+                </div>
+                <div class="triage__row">
+                  <label class="mono" for="tTp">Temperature <b id="tTpV">37.2</b>°C</label>
+                  <input type="range" id="tTp" min="350" max="410" value="372" />
+                </div>
+                <div class="triage__out">
+                  <span class="triage__badge" id="tBadge">Low risk</span>
+                  <span class="mono muted" id="tNote">Routine queue</span>
+                </div>
+              </div>
+            </div>
+            <p class="demo__hint mono">Drag the vitals. The real project uses a trained model, this demo uses simple rules.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- MORE -->
+    <section class="section section--tight">
+      <div class="container">
+        <header class="sec-head sec-head--row">
+          <span class="label">More builds</span>
+          <a class="ulink" href="https://github.com/harasameeraj?tab=repositories" target="_blank" rel="noopener">All repositories ↗</a>
+        </header>
+        <ul class="index" id="index">
+          <li data-reveal><a href="https://github.com/harasameeraj/debales-app" target="_blank" rel="noopener" data-peek="Next.js route handlers validate every input with Zod, and a pure access layer handles authorization with no database calls.">
+            <span class="index__n mono">06</span><span class="index__name">Debales AI</span><span class="index__what">Multi-tenant AI assistant platform</span><span class="index__stack mono">Next.js · MongoDB · Gemini</span><span class="index__go" aria-hidden="true">↗</span></a></li>
+          <li data-reveal><a href="https://github.com/harasameeraj/salvus" target="_blank" rel="noopener" data-peek="A responder command center plus a civilian PWA that falls back from internet to SMS to peer-to-peer when networks fail.">
+            <span class="index__n mono">07</span><span class="index__name">Salvus</span><span class="index__what">AI disaster communication</span><span class="index__stack mono">Python · PWA</span><span class="index__go" aria-hidden="true">↗</span></a></li>
+          <li data-reveal><a href="https://github.com/harasameeraj/crm" target="_blank" rel="noopener" data-peek="CRM, billing, charging and activation services talking over REST, covering seven SIM lifecycle use cases.">
+            <span class="index__n mono">08</span><span class="index__name">Telecom SIM Manager</span><span class="index__what">Service-based telecom backend</span><span class="index__stack mono">FastAPI · SQLite</span><span class="index__go" aria-hidden="true">↗</span></a></li>
+          <li data-reveal><a href="https://github.com/harasameeraj/secure-password-manager" target="_blank" rel="noopener" data-peek="Fernet-encrypted storage, a hashed master password, an API layer and a pytest suite.">
+            <span class="index__n mono">09</span><span class="index__name">Secure Password Manager</span><span class="index__what">Local encrypted vault</span><span class="index__stack mono">Python · cryptography</span><span class="index__go" aria-hidden="true">↗</span></a></li>
+          <li data-reveal><a href="https://github.com/harasameeraj/BloodDonorApp" target="_blank" rel="noopener" data-peek="Connects hospitals with nearby donors in real time during urgent shortages.">
+            <span class="index__n mono">10</span><span class="index__name">Blood Donor Alert</span><span class="index__what">Hospital and donor matching</span><span class="index__stack mono">Python · SQLite</span><span class="index__go" aria-hidden="true">↗</span></a></li>
+          <li data-reveal><a href="https://github.com/harasameeraj/student-marks-predictor" target="_blank" rel="noopener" data-peek="A linear-regression model in scikit-learn that predicts student marks from study data.">
+            <span class="index__n mono">11</span><span class="index__name">Student Marks Predictor</span><span class="index__what">Regression model</span><span class="index__stack mono">scikit-learn · pandas</span><span class="index__go" aria-hidden="true">↗</span></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container">
+        <header class="sec-head">
+          <span class="label">Skills</span>
+          <h2 class="h2" data-title>The tools, and <em>where I used them.</em></h2>
+          <p class="sec-head__sub">Hover a skill to see which project it shipped in.</p>
+        </header>
+        <div class="skills" id="skillsList">
+          <div class="skill-row" data-reveal>
+            <h3>AI &amp; LLMs</h3>
+            <ul>
+              <li data-used="Stitch ATS · VendorScan">GPT-4o</li><li data-used="Stitch ATS · Debales AI">Gemini</li><li data-used="Kavach &amp; Nirva">RAG</li><li data-used="Kavach &amp; Nirva">Hybrid retrieval</li><li data-used="VendorScan · Stitch ATS">LLM agents</li><li data-used="Kavach &amp; Nirva">Ollama</li><li data-used="Kavach &amp; Nirva">spaCy</li><li data-used="Kavach &amp; Nirva">Presidio</li><li data-used="Kavach &amp; Nirva">Tesseract OCR</li><li data-used="Patient Triage · Marks Predictor">scikit-learn</li>
+            </ul>
+          </div>
+          <div class="skill-row" data-reveal>
+            <h3>Security</h3>
+            <ul>
+              <li data-used="Kavach &amp; Nirva">PII redaction / DLP</li><li data-used="Orbit">RBAC &amp; Row-Level Security</li><li data-used="Patient Triage">JWT</li><li>scrypt</li><li>AES-GCM</li><li>CSRF &amp; rate limiting</li><li data-used="Stitch ATS">Parameterised SQL</li><li>OWASP Top 10</li><li>Threat modelling</li><li data-used="VendorScan">Third-party risk</li><li data-used="VendorScan">OSINT</li>
+            </ul>
+          </div>
+          <div class="skill-row" data-reveal>
+            <h3>Frontend</h3>
+            <ul>
+              <li data-used="Stitch ATS · Kavach · VendorScan · Triage">React</li><li data-used="Debales AI">Next.js</li><li data-used="Orbit">React Native</li><li data-used="Kavach &amp; Nirva">Vite</li><li data-used="Kavach &amp; Nirva">Tailwind CSS</li><li data-used="Patient Triage">Recharts</li>
+            </ul>
+          </div>
+          <div class="skill-row" data-reveal>
+            <h3>Backend &amp; data</h3>
+            <ul>
+              <li data-used="Stitch ATS · Kavach · VendorScan · SIM Manager">FastAPI</li><li data-used="Patient Triage">Node.js &amp; Express</li><li data-used="Orbit">Supabase</li><li data-used="Orbit">PostgreSQL</li><li data-used="Orbit">Realtime / WebSockets</li><li data-used="Stitch ATS">SQLAlchemy</li><li data-used="Stitch ATS · SIM Manager">SQLite</li><li data-used="Debales AI">MongoDB</li><li>MySQL</li><li>REST APIs</li>
+            </ul>
+          </div>
+          <div class="skill-row" data-reveal>
+            <h3>Languages &amp; tools</h3>
+            <ul>
+              <li>Python</li><li data-used="Kavach &amp; Nirva · Debales AI">TypeScript</li><li>JavaScript</li><li>SQL</li><li>Java</li><li>C++</li><li>C</li><li>Bash</li><li data-used="Kavach &amp; Nirva">Docker</li><li>GitHub Actions</li><li data-used="Kavach · Password Manager">Pytest</li><li>Linux</li><li>Git</li>
+            </ul>
+          </div>
+        </div>
+        <div class="gh" data-reveal>
+          <p class="mono gh__head"><span class="live"></span><span id="ghHead">GitHub · loading live data</span></p>
+          <div class="gh__bar" id="ghBar"></div>
+          <ul class="gh__legend mono" id="ghLegend"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- TERMINAL -->
+    <section class="section" id="terminal">
+      <div class="container">
+        <header class="sec-head">
+          <span class="label">Terminal</span>
+          <h2 class="h2" data-title>Prefer a shell? <em>Ask me anything.</em></h2>
+          <p class="sec-head__sub">It's a real prompt. Type <code>help</code>, or try <code>sudo hire-hara</code>.</p>
+        </header>
+        <div class="term" id="term" data-reveal>
+          <div class="term__bar">
+            <span class="win__dots"><i></i><i></i><i></i></span>
+            <span class="mono">recruiter@hara: ~</span>
+            <span class="mono term__bar-r">zsh</span>
+          </div>
+          <div class="term__body" id="termBody" tabindex="0">
+            <div id="termOut"></div>
+            <form class="term__line" id="termForm" autocomplete="off">
+              <label for="termInput" class="term__ps"><span class="u">recruiter</span>@<span class="h">hara</span>:<span class="p">~</span>$</label>
+              <input id="termInput" type="text" spellcheck="false" autocapitalize="off" aria-label="Terminal input" />
+            </form>
+          </div>
+          <div class="term__quick">
+            <button data-cmd="whoami">whoami</button>
+            <button data-cmd="projects">projects</button>
+            <button data-cmd="skills">skills</button>
+            <button data-cmd="awards">awards</button>
+            <button data-cmd="github">github</button>
+            <button data-cmd="contact">contact</button>
+            <button data-cmd="sudo hire-hara" class="hot">sudo hire-hara</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECOGNITION -->
+    <section class="section" id="awards">
+      <div class="container">
+        <header class="sec-head">
+          <span class="label">Recognition</span>
+          <h2 class="h2" data-title>Wins &amp; <em>credentials.</em></h2>
+        </header>
+        <ul class="awards">
+          <li class="award" data-reveal><span class="award__yr mono">2026</span><div><h3>AWS VIT Chennai Hackathon</h3><p>Winner with Stitch ATS, built and deployed in one sprint.</p></div><span class="award__tag mono award__tag--win">Winner</span></li>
+          <li class="award" data-reveal><span class="award__yr mono">2026</span><div><h3>NIT Trichy Vortex'26</h3><p>Winner with AI Patient Triage.</p></div><span class="award__tag mono award__tag--win">Winner</span></li>
+          <li class="award" data-reveal><span class="award__yr mono">Total</span><div><h3>Five hackathon wins</h3><p>At inter-college events, each one a working product built against the clock.</p></div><span class="award__tag mono">5×</span></li>
+          <li data-reveal><a class="award" href="https://www.credly.com/users/hara-sameeraj-kuppili" target="_blank" rel="noopener"><span class="award__yr mono">Oct 2026</span><div><h3>Cisco · Introduction to Cybersecurity</h3><p>Verified badge on Credly ↗</p></div><span class="award__tag mono">Certified</span></a></li>
+          <li class="award" data-reveal><span class="award__yr mono">Dec 2025</span><div><h3>McKinsey.org Forward Program</h3><p>Structured problem solving and communication.</p></div><span class="award__tag mono">Program</span></li>
+          <li data-reveal><a class="award" href="https://github.com/harasameeraj" target="_blank" rel="noopener"><span class="award__yr mono">Ongoing</span><div><h3>Open source &amp; problem solving</h3><p>Merged PRs in community repos like Builders-Hut/DeadIdeas, HackerRank Python 5★, regular on LeetCode.</p></div><span class="award__tag mono">OSS</span></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <span class="label">Contact</span>
+        <h2 class="contact__title" data-title>Let's <em>talk.</em></h2>
+        <p class="contact__lede">I'm looking for internships and early roles in software, AI and security engineering. Email or WhatsApp is the fastest way to reach me.</p>
+
+        <button class="contact__email" id="copyEmail" data-cursor="copy" aria-label="Copy email address">
+          <span class="contact__email-val">harasameeraj.7@gmail.com</span>
+          <span class="contact__copy mono" id="copied">click to copy</span>
+        </button>
+
+        <div class="contact__grid">
+          <div>
+            <p class="mono declass__head" id="declassHead">classified</p>
+            <dl class="dossier" id="dossier">
+              <div><dt class="mono">Phone</dt><dd><a href="tel:+919063127578">+91 90631 27578</a><i class="bar"></i></dd></div>
+              <div><dt class="mono">WhatsApp</dt><dd><a href="https://wa.me/919063127578" target="_blank" rel="noopener">wa.me/919063127578</a><i class="bar"></i></dd></div>
+              <div><dt class="mono">LinkedIn</dt><dd><a href="https://www.linkedin.com/in/hara-sameeraj-8b63072b7/" target="_blank" rel="noopener">in/hara-sameeraj</a><i class="bar"></i></dd></div>
+              <div><dt class="mono">GitHub</dt><dd><a href="https://github.com/harasameeraj" target="_blank" rel="noopener">github.com/harasameeraj</a><i class="bar"></i></dd></div>
+              <div><dt class="mono">Credly</dt><dd><a href="https://www.credly.com/users/hara-sameeraj-kuppili" target="_blank" rel="noopener">hara-sameeraj-kuppili</a><i class="bar"></i></dd></div>
+              <div><dt class="mono">Résumé</dt><dd class="dossier__cv"><a href="/Hara_Sameeraj_Kuppili_Resume.pdf" download>Full-stack &amp; AI ↓</a><a href="/Hara_Sameeraj_Kuppili_Resume_Security.pdf" download>Security ↓</a><i class="bar"></i></dd></div>
+            </dl>
+          </div>
+
+          <form class="cform" id="contactForm" novalidate>
+            <p class="mono cform__head">Or write a quick note</p>
+            <div class="field"><input id="fName" name="name" required placeholder=" " autocomplete="name" /><label for="fName">Your name</label></div>
+            <div class="field"><input id="fOrg" name="org" placeholder=" " autocomplete="organization" /><label for="fOrg">Company (optional)</label></div>
+            <div class="field field--select">
+              <select id="fType" name="type">
+                <option>Internship opportunity</option>
+                <option>Full-time role</option>
+                <option>Freelance or project</option>
+                <option>Hackathon or collaboration</option>
+                <option>Just saying hi</option>
+              </select>
+              <label for="fType">About</label>
+            </div>
+            <div class="field"><textarea id="fMsg" name="message" rows="3" required placeholder=" "></textarea><label for="fMsg">Message</label></div>
+            <p class="cform__err mono" id="formErr" role="alert"></p>
+            <button type="submit" class="btn btn--solid" data-magnetic><span>Send it</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+            <p class="cform__note mono">Opens your email app with the message filled in. Nothing is stored.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__big" aria-hidden="true"><span>Hara</span> <i>Sameeraj</i></p>
+      <div class="footer__row mono">
+        <span>© 2026 Hara Sameeraj Kuppili. Designed and built by me.</span>
+        <span class="footer__sec"><span class="live"></span>Strict CSP &amp; security headers</span>
+        <a href="#top" class="footer__top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- COMMAND MENU -->
+  <div class="cmdk" id="cmdk" aria-hidden="true">
+    <div class="cmdk__backdrop" data-close></div>
+    <div class="cmdk__panel" role="dialog" aria-modal="true" aria-label="Command menu">
+      <div class="cmdk__search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <input id="cmdkInput" type="text" placeholder="Jump to a section, copy email, get the résumé…" aria-label="Search commands" />
+        <kbd>esc</kbd>
+      </div>
+      <ul class="cmdk__list" id="cmdkList" role="listbox"></ul>
+    </div>
+  </div>
+
+  <div class="toast mono" id="toast" role="status" aria-live="polite"></div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
